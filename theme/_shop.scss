@@ -1,0 +1,104 @@
+
+.shop-username {
+
+}
+
+.shop-title-div {
+  margin-top: 30px;
+}
+
+.shop-title {
+  width: 100%;
+  margin: auto;
+}
+
+.shop-login-button {
+  height: 40px;
+  width: 250px;
+}
+
+.packs-container {
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+.pack-details-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 100%;
+}
+
+.pack-img {
+  width: 40%;
+  margin-left: 30%;
+}
+
+.pack-name {
+  margin: auto;
+  margin: 0px 20px 20px 20px;
+}
+
+.pack-description {
+  height: 30px;
+  margin: 5px 0px;
+}
+
+.pack-description-underline {
+  border-bottom: 1px dotted black;
+  color: $color-join-buton-bg;
+}
+
+.pack-description-image {
+  vertical-align: -webkit-baseline-middle;
+}
+
+.pack-description-info {
+  display: block;
+  right: -100%;
+  top: -50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: fit-content;
+  margin-left: 5px;
+}
+
+.pack-description-info-image {
+  height: 15px;
+  width: 15px;
+}
+
+.pack-owned-text {
+  margin: auto;
+  line-height: 40px;
+}
+
+.pack-purchase-button {
+  width: 180px;
+  margin-top: auto;
+}
+
+.pack-purchase-button-div {
+  margin-bottom: -10px;
+  height: 50px;
+}
+
+.shop-faq-div {
+  margin-top: 50px;
+}
+
+.shop-faq-div p {
+  text-align: left;
+}
+
+.shop-faq-text {
+  width: 95%;
+  margin: 20px auto;
+}
+
+.shop-faq-text-question {
+  font-weight: bold;
+}

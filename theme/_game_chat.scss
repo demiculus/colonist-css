@@ -1,0 +1,93 @@
+/*
+Game chat
+*/
+
+.general-button {
+  border-radius:5px;
+  color: $color-gray-1;
+  text-decoration:none;
+  text-align:center;
+  box-shadow:0 0 0 #000 inset,0 1px 0 $color-gray-1;
+  -webkit-transition:box-shadow .5s;
+  cursor:pointer
+}
+
+.general-button:hover {
+  box-shadow:0 0 0 $color-gray-1 inset,0 0 1px $color-gray-1
+}
+
+.game-chat-div {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  /*width: 200px;*/
+}
+
+.game-chat-bg {
+  /*flex-wrap: nowrap;*/
+  background-color: rgba(248, 248, 248, 0.8); /* rgb version of --color-gray-3 */
+  border-radius: 5px;
+  border: 0px solid;
+}
+
+.game-chat-button-div {
+  height: 30px;
+  line-height: 30px;
+  width: 99%;
+  border-radius: 5px;
+  border: 0px solid;
+  display: flex;
+  margin: auto;
+  justify-content: flex-end;
+  margin-top: 2px;
+}
+
+.game-chat-button-div div {
+  width: 50%;
+  margin: 0px 1px;
+}
+
+.game-chat-button-normal {
+  background-color: rgba(248, 248, 248, 0.8); /* rgb version of --color-gray-3 */
+}
+
+.game-chat-button-notification {
+  background-color: rgba(250, 180, 180, 1.0)
+}
+
+.chat-div-textdiv {
+
+}
+
+.chat-div-textdiv-text {
+  -webkit-flex: 1 1 auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  word-wrap: break-word;
+}
+
+.chat-div-textdiv-text p {
+  font-size: small;
+  margin: 5px 5px 3px 10px;
+  -webkit-user-select: text; /* Safari */
+  -moz-user-select: text; /* Firefox */
+  -ms-user-select: text; /* IE10+/Edge */
+  user-select: text; /* Standard */
+}
+
+#game-chat-form {
+  width: 100%;
+}
+
+#game-chat-form input {
+  height: 20px;
+  width: 99%;
+  border-radius: 5px;
+  border: 0px solid;
+  //opacity: 0.2;
+}
+
+#game-chat-form input:hover {
+  //opacity: 0.8;
+}
+

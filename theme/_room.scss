@@ -1,0 +1,178 @@
+.room_center_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.room_center_scroll {
+  flex: 1 1 auto;
+  overflow-y: scroll;
+  display: flex;
+  flex-flow: column;
+  padding: 5px 15px;
+  margin: 0px 5px 5px 5px;
+}
+
+.room_table_name_column {
+  text-align: right;
+  padding-right: 15px;
+}
+
+.room_table_data_column {
+  text-align: left;
+  display: flex;
+  * {
+    height: 20px;
+  }
+}
+
+.room_table_link_container {
+  display: flex;
+  align-items: center;
+}
+
+.room_center_link {
+  margin-left: 5px;
+  vertical-align: text-bottom;
+  margin: 0 10px 0 0;
+}
+
+.room_center_select {
+  background-color: $color-white;
+  width: 100px;
+  text-align-last: center;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.room_center_select option {
+  text-align-last: center;
+}
+
+.room_center_select:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+.room_center_select_disable {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
+.room_center_get_maps {
+  cursor: pointer;
+  display: block;
+}
+
+.room_center_start_button {
+  margin: 10px auto 0 auto;
+}
+
+.room_center_header {
+  position: relative;
+}
+
+.room_center_exit_button {
+  cursor: pointer;
+  position: absolute;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+}
+
+.room_ready {
+  font-size: 1.17em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.room_ready span {
+  display: block;
+}
+
+.room_ready input {
+  -webkit-appearance: none;
+  background-color: $color-white;
+  border: 1px solid $color-gray-2;
+  box-shadow: 0 0px 0px black inset, 0 1px 0px $color-gray-1;
+  -webkit-transition:box-shadow 0.5s;
+  padding: 20px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.room_ready input:active, .room_ready input:checked:active {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.room_ready input:checked {
+  background-color: $color-green-button-bg;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+}
+
+.room_ready input:checked:after {
+  content:"";
+  background-image: url('../../dist/images/icon_check.svg');
+  background-size: 30px 30px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+}
+
+.room_player_name {
+  @extend .player_name;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+}
+
+.room_player_ready_div {
+  align-self: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  span {
+    font-weight: bold;
+  }
+}
+
+.room_player_ready {
+  @extend .room_player_ready_div;
+  color: $color-spectate-button-bg;
+}
+
+.room_player_not_ready {
+  @extend .room_player_ready_div;
+  color: $color-create-button-bg;
+}
+
+.room_player_karma_img {
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

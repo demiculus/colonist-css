@@ -1,0 +1,50 @@
+.ab_block.ab_block-one, .ab_block.ab_block-two {
+  width: 160px;
+  height: 600px;
+}
+
+.ab_block.ab_block-three {
+  margin: auto;
+  width: 728px;
+  height: 90px;
+}
+
+.ab_block.ab_block-four {
+  margin: auto;
+  width: 970px;
+  height: 250px;
+}
+
+.endgame-google-ad-right {
+  /*background-color: #60f133;*/
+  position: absolute;
+}
+
+.endgame-google-ad-left {
+  /*background-color: #2a52f1;*/
+  position: absolute;
+}
+
+.in-game-ad-right {
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  width: 160px;
+  height: 600px;
+  overflow: hidden;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.in-game-ad-left {
+  position: absolute;
+  cursor: pointer;
+  left :5px;
+  width: 160px;
+  height: 600px;
+  overflow: hidden;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  z-index: 2;
+}

@@ -1,0 +1,152 @@
+/* The Popup (background) */
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Popup Content */
+.popup-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  /*border: 1px solid #888;*/
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.popup-close {
+  color: $color-white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.popup-close:hover,
+.popup-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.popup-header {
+  padding: 2px 16px;
+  background-color: $color-main-block-bg;
+  color: $color-white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.popup-body {
+  background-color: $color-main-block-bg;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.popup-footer {
+  padding: 2px 16px;
+  background-color: $color-main-block-bg;
+  color: $color-white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.popup-video-div {
+  height: 360px;
+}
+
+.popup-rules-div {
+  padding: 0 5px;
+  height: 360px;
+  overflow-y: scroll;
+  flex-grow: 1;
+  margin: auto;
+}
+
+.popup-footer-button {
+  /*width: 190px;*/
+  /*margin: 10px 20px;*/
+  /*background-color: var(--color-gray-3);*/
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Old Pupup Change name popup*/
+
+.popupDiv {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: auto;
+}
+
+.popupDiv-text {
+  -webkit-user-select: text; /* Safari */
+  -moz-user-select: text; /* Firefox */
+  -ms-user-select: text; /* IE10+/Edge */
+  user-select: text; /* Standard */
+}
+
+.popupDiv-selectionDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.popupDiv-selectionDiv-div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 5px 5px 5px 5px;
+  border: 0px solid rgb(0, 0, 0);
+  box-shadow: 0px 0px 0px inset, 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.popupDiv-selectionDiv-divSelected {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 5px 5px 5px 5px;
+  border: 1px solid rgb(86, 180, 239);
+  box-shadow: 0px 1px 3px inset, 0px 0px 8px rgba(82, 168, 236, 0.6);
+}
+
+.popupDiv-selectionDiv-div-text {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.popupDiv-selectionDiv-div-image {
+  height: 150px;
+}

@@ -1,0 +1,211 @@
+@media (min-width: $breakPoint_width_xxl){
+  .container {
+    max-width: 1340px;
+  }
+}
+@media (max-width: $breakPoint_width_xxl - 1px){
+  .main_container_block{
+    max-width: 100%;
+  }
+}
+@media (max-height: $breakPoint_height_lg - 1px){
+  .ab_block.ab_block-three{
+    display: none;
+  }
+}
+@media (min-height: $breakPoint_height_xl){
+  .ab_block.ab_block-three{
+    display: none;
+  }
+}
+@media (max-height: $breakPoint_height_xl - 1px){
+  .ab_block.ab_block-four{
+    display: none;
+  }
+}
+@media (max-width: $breakPoint_width_md - 1px){
+  .lobby_center_block .tab-content .tab-pane {
+    // height: 243px;
+  }
+  .lobby_center_block .tab-content .tab-pane{
+    height: 318px !important;
+  }
+  .chat_box .message_list {
+    height: 197px;
+  }
+}
+@media (min-width: $breakPoint_width_sm) and (max-width: $breakPoint_width_md - 1px){
+  header.container-fluid{
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 10px;
+    .row{
+      >:nth-child(2){
+        -ms-flex-order: 2;
+        order: 2;
+      }
+      >:nth-child(3){
+        -ms-flex-order: 3;
+        order: 3;
+      }
+    }
+  }
+  .header_logo > img {
+    transform: translateY(30px);
+    padding: 0 !important;
+    width: 172px;
+  }
+  .lobby_center_block .tab-content .tab-pane {
+    // height: 306px;
+  }
+  .lobby_center_block .tab-content .tab-pane{
+    height: 270px !important;
+  }
+  .chat_box .message_list {
+    height: 114px;
+  }
+}
+@media only screen and (max-height: $breakPoint_height_ms) and (min-width: $breakPoint_width_md) {
+  .chat_box .message_list {
+    height: 354px;
+  }
+  .lobby_center_block .tab-content .tab-pane {
+    // height: 290px;
+  }
+  .lobby_center_block .tab-content .tab-pane{
+    height: 254px !important;
+  }
+  .online_players_list {
+    height: 131px;
+  }
+}
+
+@media (max-height: $breakPoint_height_sm) and (max-width: $breakPoint_width_lg - 1px){
+  .lobby_center_block .tab-content .tab-pane {
+    // height: 286px;
+  }
+  .lobby_center_block .tab-content .tab-pane{
+    height: 250px !important;
+  }
+  .chat_box .message_list {
+    height: 115px;
+  }
+  .lobby_block{
+    >.row{
+      >:nth-child(1){
+        display: none !important;
+      }
+      >:nth-child(2){
+        order: 4 !important;
+      }
+    }
+  }
+}
+@media (max-height: $breakPoint_height_md){
+  .ab_block{
+    &.ab_block-one,
+    &.ab_block-two{
+      img{
+        //height: 450px;
+      }
+    }
+  }
+}
+@media (min-height: $breakPoint_height_lg){
+  //.dataTables_scrollBody{
+  //  height: 354px;
+  //}
+}
+@media (max-height: $breakPoint_height_xs) and (max-width: $breakPoint_width_md - 1px){
+  .chat_box .message_list {
+    height: 95px;
+  }
+}
+@media (max-height: $breakPoint_height_sm){
+  .lobby_block>.row>:nth-child(2)>:not(.lobby_center_block){
+    display: none !important;
+  }
+}
+
+@media only screen and (orientation: landscape), only screen and (min-width: $breakPoint_width_sm) {
+  .rotation_message {
+    display: none;
+  }
+}
+
+/* Mobbile sidebar/nav */
+@media (min-width: $breakPoint_width_lg){
+  header .mobile_btn{
+    display: none;
+  }
+}
+@media (max-width: $breakPoint_width_lg - 1px){
+  .res_block{
+    &.active{
+      transform: translateX(0%);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  header .res_block{
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    width: 260px;
+    padding: 3rem 0 0rem;
+    transition: $main-transition;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-110%);
+
+    background: $color-main-block-shadow;
+    box-shadow: 0px 0px 5px 5px #444;
+    top: 0;
+    height: 100%;
+
+    display: flex;
+    flex-flow: wrap;
+    align-content: space-between;
+    overflow-y: auto;
+    overflow-x: hidden;
+    &>*{
+      padding: 1rem;
+    }
+    .btn_mnav_close{
+      content: '';
+      display: inline-block;
+      background-color: $color-main-block-border;
+      color: $color-white;
+      text-align: center;
+      font-size: 20px;
+      line-height: 0;
+      width: 40px;
+      height: 40px;
+      right: 15px;
+      top: 15px;
+      position: absolute;
+      border: none;
+      border-radius: 50%;
+      >img{
+        max-width: 100%;
+        width: 12px;
+        pointer-events: none;
+      }
+    }
+  }
+}
+@media (max-width: $breakPoint_width_md - 1px){
+  footer.res_block{
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    width: 260px;
+    padding: 1rem;
+    transition: $main-transition;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-110%);
+
+    bottom: 0;
+  }
+}

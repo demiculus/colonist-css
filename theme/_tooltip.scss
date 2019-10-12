@@ -1,0 +1,117 @@
+$tooltip-percentage-distance: 140%;
+// https://www.w3schools.com/css/css_tooltip.asp
+
+.tooltip_container {
+  position: relative;
+  //cursor: pointer;
+  //display: inline-block;
+  //border-bottom: 1px dotted black;
+}
+
+.tooltip_container:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: $color-gray-0;
+  color: $color-gray-3;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltiptext_top {
+  @extend .tooltiptext;
+  bottom: $tooltip-percentage-distance;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltiptext_bottom {
+  @extend .tooltiptext;
+  top: $tooltip-percentage-distance;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltiptext_left {
+  @extend .tooltiptext;
+  top: -5px;
+  right: $tooltip-percentage-distance;
+}
+
+.tooltiptext_right {
+  @extend .tooltiptext;
+  top: -5px;
+  left: $tooltip-percentage-distance;
+}
+
+.tooltip_container span:hover {
+  display: none;
+}
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.tooltiptext_top::after {
+  @extend .tooltiptext::after;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-color: $color-gray-0 transparent transparent transparent;
+}
+
+.tooltiptext_bottom::after {
+  @extend .tooltiptext::after;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-color: transparent transparent $color-gray-0 transparent;
+}
+
+.tooltiptext_left::after {
+  @extend .tooltiptext::after;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-color: transparent transparent transparent $color-gray-0;
+}
+
+.tooltiptext_right::after {
+  @extend .tooltiptext::after;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-color: transparent $color-gray-0 transparent transparent;
+}
+
+.tooltipmediumtext_right {
+  @extend .tooltiptext;
+  width: 200px;
+  top: -5px;
+  left: $tooltip-percentage-distance;
+}
+
+.tooltipmediumtext_right::after {
+  @extend .tooltiptext::after;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-color: transparent $color-gray-0 transparent transparent;
+}
+
+
+
+//.tooltiplargetext {
+//  width: 500px;
+//  margin-left: -250px;
+//}
+
